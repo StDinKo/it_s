@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile {
+    width: 1280px;
+    margin: 0 auto;
+}
+.section {
+    padding: 50px;
+}
+.section_black{
+    background-color: #445162;
+}
+.main-article__title{
+    font-size: 60px;
+    margin-bottom: 50px;
+
+}
+.main-article__item{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.main-article_white{
+    color: white;
+}
+.section__img{
+width: 40%;
+}
+.main-section{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.main-article__item::before{
+    content: url('../assets/check_icon.png');
+    padding-right: 10px;
+}
