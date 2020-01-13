@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 .profile {
     width: 1280px;
@@ -79,6 +80,10 @@ width: 40%;
     flex-flow: row;
     justify-content: space-between;  
     padding-bottom: 30px;
+}
+.scren-article__item_bot{
+    
+    padding-bottom: 0px;
 }
 .scren-article__img{
     width: 25%;
