@@ -142,3 +142,48 @@ body{
     line-height: 1.5;
     margin: -5px 20px 0 0;
 }
+.rewiev__title{
+    text-align: center;
+    font-size: 30px;
+    color: #445161;
+}
+.rewiev-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.review-article_blue{
+    color: #445161;
+}
+.rewiev-article__colum{
+    width: 575px;
+}
+.rewiev-article__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-top: 30px;
+}
+.rewiev-article__img{
+    border-radius: 75px;
+    width: 75px;
+    height: 75px;
+} 
+.rewiev-article__quote{
+    position: relative;
+    width: 475px;
+    border-radius: 3px;
+    background-color: #ebebeb;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.rewiev-article__quote-text{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.5;
+}
+.rewiev-article__quote-sign{
+    font-size: 14px;
+    color: #adadad;
+    margin-top: 15px;
+}
