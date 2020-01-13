@@ -8,9 +8,7 @@ body{
 .section {
     padding: 50px;
 }
-.about {
-    padding: 50px;
-}
+
 .section_black{
     background-color: #445162;
 }
@@ -39,11 +37,14 @@ body{
 .main-article_white{
     color: white;
 }
-.main-article_blue{
+.about-article_blue{
     color: #445161;
 }
-.section__img{
+.main__img{
 width: 40%;
+}
+.about__img{
+    width: 35%;
 }
 .main-section{
     display: flex;
