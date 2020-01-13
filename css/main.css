@@ -26,12 +26,11 @@ body{
 }
 .about-article__title{
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
 }
 .scren__title{
     font-size: 30px;
-    margin-bottom: 50px;
     text-align: center;
     color: #445161;
 
@@ -88,12 +87,9 @@ body{
     display: flex;
     flex-flow: row;
     justify-content: space-between;  
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
-.scren-article__item_bot{
-    
-    margin-bottom: 0px;
-}
+
 .scren-article__img{
     width: 35%;
     margin-right: 15px;
