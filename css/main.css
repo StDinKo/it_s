@@ -8,25 +8,49 @@ body{
 .section {
     padding: 50px;
 }
+.about {
+    padding: 50px;
+}
 .section_black{
     background-color: #445162;
+}
+.section_white{
+    background-color: white;
 }
 .main-article__title{
     font-size: 60px;
     margin-bottom: 50px;
 
 }
+.about-article__title{
+    font-size: 30px;
+    margin-bottom: 50px;
+
+}
 .main-article__item{
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.about-article__item{
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 .main-article_white{
     color: white;
+}
+.main-article_blue{
+    color: #445161;
 }
 .section__img{
 width: 40%;
 }
 .main-section{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.abot-section{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
