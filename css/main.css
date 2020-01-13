@@ -16,6 +16,9 @@ body{
 .section_white{
     background-color: white;
 }
+.section_pink{
+    background-color: #f5f5f5;
+}
 .main-article__title{
     font-size: 60px;
     margin-bottom: 50px;
@@ -29,6 +32,12 @@ body{
 .scren__title{
     font-size: 30px;
     margin-bottom: 50px;
+    text-align: center;
+    color: #445161;
+
+}
+.plus__title{
+    font-size: 30px;
     text-align: center;
     color: #445161;
 
@@ -49,6 +58,9 @@ body{
     color: #445161;
 }
 .scren-article_blue{
+    color: #445161;
+}
+.plus-article_blue{
     color: #445161;
 }
 .main__img{
@@ -101,11 +113,39 @@ width: 40%;
     width: 50%;
     
 }
+.plus-article__colum{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .scren-article{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+}
+.plus-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 .scren-article__description{
     margin-right: 10px;
+}
+.plus-article__item{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.plus-article__img{
+height: 32px;
+margin-right: 10px;
+}
+.plus-article__text{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-right: 20px;
 }
