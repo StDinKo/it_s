@@ -187,3 +187,8 @@ body{
     color: #adadad;
     margin-top: 15px;
 }
+.rewiev-article__quote::before{
+    position: absolute;
+    content: url('../assets/rewiev_arrow.png');
+    margin-left: -32px;
+}
