@@ -25,6 +25,13 @@ body{
     margin-bottom: 50px;
 
 }
+.scren__title{
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #445161;
+
+}
 .main-article__item{
     font-size: 20px;
     margin-bottom: 20px;
@@ -38,6 +45,9 @@ body{
     color: white;
 }
 .about-article_blue{
+    color: #445161;
+}
+.scren-article_blue{
     color: #445161;
 }
 .main__img{
@@ -59,4 +69,38 @@ width: 40%;
 .main-article__item::before{
     content: url('../assets/check_icon.png');
     padding-right: 10px;
+}
+.scren-article__list{
+    display: flex;
+	flex-direction: column;
+}
+.scren-article__item{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;  
+    padding-bottom: 30px;
+}
+.scren-article__img{
+    width: 25%;
+    padding-right: 15px;
+}
+.scren-article__description-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.scren-article__description-text{
+  font-size: 16px;
+  line-height: 1.5;  
+}
+.scren-article__colum{
+    width: 50%;
+    
+}
+.scren-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.scren-article__description{
+    margin-right: 10px;
 }
