@@ -64,7 +64,7 @@ body{
     color: #445161;
 }
 .main__img{
-width: 40%;
+    width: 40%;
 }
 .about__img{
     width: 35%;
@@ -81,25 +81,22 @@ width: 40%;
 }
 .main-article__item::before{
     content: url('../assets/check_icon.png');
-    padding-right: 10px;
+    margin-right: 10px;
 }
-.scren-article__list{
-    display: flex;
-	flex-direction: column;
-}
+
 .scren-article__item{
     display: flex;
     flex-flow: row;
     justify-content: space-between;  
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .scren-article__item_bot{
     
-    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .scren-article__img{
     width: 35%;
-    padding-right: 15px;
+    margin-right: 15px;
 }
 .scren-article__description-title{
     font-size: 24px;
@@ -117,7 +114,7 @@ width: 40%;
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 .scren-article{
     display: flex;
