@@ -58,3 +58,19 @@ body{
 .header-section__img_type_adr{
     margin: -1px 1px 0 2px;
 }
+.section-main{
+    background-color: white;
+    display: flex;
+    
+}
+.section-right{
+    max-width: 70%;
+ 
+}
+.section-left{
+    max-width: 30%;
+    background-color: #d5d5d5;
+   
+    padding: 55px 10px 0 55px;
+}
+
