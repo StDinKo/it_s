@@ -321,3 +321,15 @@ body{
 .contact-article__info-social{
     margin-left: -28px;
 }
+.section-foter__article{
+    font-size: 12px;
+    text-align: center;
+}
+.section-foter{
+    background-color: white;
+    color: #445162;
+    padding: 5px 0;
+    width: 1280px;
+    margin: 0 auto;
+    
+}
