@@ -248,3 +248,76 @@ body{
     text-align: center;
     color: #445162;
 }
+
+.contact__title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-section{
+    color: white;
+}
+.contact-section__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact-article__form-text{
+    border-radius: 10px;
+    text-align: left;
+    height: 20px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-article__form{
+   color:  #445162;
+   width: 500px;
+   margin-right: 100px;
+   
+}
+.contact-article__form-text_big{
+    height: 150px;
+}
+.contact-article__button{
+    border-radius: 10px;
+    text-align: center;
+    height: 40px;
+    font-size: 16px;
+    width: 150px;  
+    margin-left: 175px;
+}
+.contact-article__info-item{
+    margin-bottom: 20px;
+    font-size: 16px;
+    position: relative;
+
+}
+.contact-article__info-item_skype::before{
+    content: url(../assets/skype_icon.png);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+}
+.contact-article__info-item_isq::before{
+    content: url(../assets/icq_icon.png);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+}
+.contact-article__info-item_mail::before{
+    content: url(../assets/email_icon.png);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+}
+.contact-article__info-item_fone::before{
+    content: url(../assets/phone_icon.png);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+}
+.contact-article__info-social{
+    margin-left: -28px;
+}
