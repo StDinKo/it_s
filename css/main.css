@@ -192,3 +192,59 @@ body{
     content: url('../assets/rewiev_arrow.png');
     margin-left: -32px;
 }
+.buy__title{
+    text-align: center;
+    font-size: 30px;
+    color: #445161;
+    margin-bottom: 30px;
+}
+.buy-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.buy-article_white{
+    color: white;
+}
+
+.buy-article__item{
+    width: 300px;
+    height: auto;
+    background-color: #445162;
+    border-radius: 5px;
+
+}
+.buy-article__item-title{
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0;
+}
+.buy-article__item-prise{
+    background-color: white;
+    margin: 0 2px;
+    padding: 15px 0;
+}
+.buy-article__item-prise_cost{
+    font-size: 40px;
+    text-align: center;
+    color: #445162;
+}
+.buy-article__item-list{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+        
+}
+.buy-article__item-button{
+    background-color: white;
+    padding: 15px 0; 
+    border-radius: 5px;
+    margin: 20px;
+}
+.buy-article__item-button_text{
+    font-size: 18px;
+    text-align: center;
+    color: #445162;
+}
