@@ -1,0 +1,440 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.contact-section__content, .buy-article, .rewiev-article__item, .rewiev-article, .plus-article__item, .plus-article, .scren-article, .plus-article__colum, .scren-article__item, .abot-section, .main-section {
+  display: flex;
+}
+
+.section {
+  padding: 50px;
+}
+.section_black {
+  background-color: #445161;
+}
+.section_white {
+  background-color: white;
+}
+.section_pink {
+  background-color: #f5f5f5;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.profile {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.main-article__title {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.about-article__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.scren__title {
+  font-size: 30px;
+  text-align: center;
+  color: #445161;
+}
+
+.plus__title {
+  font-size: 30px;
+  text-align: center;
+  color: #445161;
+}
+
+.main-article__item {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-article__item {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.main-article_white {
+  color: white;
+}
+
+.about-article_blue {
+  color: #445161;
+}
+
+.scren-article_blue {
+  color: #445161;
+}
+
+.plus-article_blue {
+  color: #445161;
+}
+
+.main__img {
+  width: 40%;
+}
+
+.about__img {
+  width: 35%;
+}
+
+.main-section {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.abot-section {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.main-article__item::before {
+  content: url("../assets/check_icon.png");
+  margin-right: 10px;
+}
+
+.scren-article__item {
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.scren-article__img {
+  width: 35%;
+  margin-right: 15px;
+}
+
+.scren-article__description-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.scren-article__description-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.scren-article__colum {
+  width: 50%;
+}
+
+.plus-article__colum {
+  width: 50%;
+  flex-direction: column;
+}
+
+.scren-article {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plus-article {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.scren-article__description {
+  margin-right: 10px;
+}
+
+.plus-article__item {
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plus-article__img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.plus-article__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: -5px 20px 0 0;
+}
+
+.rewiev__title {
+  text-align: center;
+  font-size: 30px;
+  color: #445161;
+}
+
+.rewiev-article {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.review-article_blue {
+  color: #445161;
+}
+
+.rewiev-article__colum {
+  width: 575px;
+}
+
+.rewiev-article__item {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.rewiev-article__img {
+  border-radius: 75px;
+  width: 75px;
+  height: 75px;
+}
+
+.rewiev-article__quote {
+  position: relative;
+  width: 475px;
+  border-radius: 3px;
+  background-color: #ebebeb;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rewiev-article__quote-text {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.rewiev-article__quote-sign {
+  font-size: 14px;
+  color: #adadad;
+  margin-top: 15px;
+}
+
+.rewiev-article__quote::before {
+  position: absolute;
+  content: url("../assets/rewiev_arrow.png");
+  margin-left: -32px;
+}
+
+.buy__title {
+  text-align: center;
+  font-size: 30px;
+  color: #445161;
+  margin-bottom: 30px;
+}
+
+.buy-article {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.buy-article_white {
+  color: white;
+}
+
+.buy-article__item {
+  width: 300px;
+  height: auto;
+  background-color: #445162;
+  border-radius: 5px;
+}
+
+.buy-article__item-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.buy-article__item-prise {
+  background-color: white;
+  margin: 0 2px;
+  padding: 15px 0;
+}
+
+.buy-article__item-prise_cost {
+  font-size: 40px;
+  text-align: center;
+  color: #445162;
+}
+
+.buy-article__item-list {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.buy-article__item-button {
+  background-color: white;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.buy-article__item-button_text {
+  font-size: 18px;
+  text-align: center;
+  color: #445162;
+}
+
+.contact__title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-section {
+  color: white;
+}
+
+.contact-section__content {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-article__form-text {
+  border-radius: 10px;
+  text-align: left;
+  height: 20px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-article__form {
+  color: #445162;
+  width: 500px;
+  margin-right: 100px;
+}
+
+.contact-article__form-text_big {
+  height: 150px;
+}
+
+.contact-article__button {
+  border-radius: 10px;
+  text-align: center;
+  height: 40px;
+  font-size: 16px;
+  width: 150px;
+  margin-left: 175px;
+}
+
+.contact-article__info-item {
+  margin-bottom: 20px;
+  font-size: 16px;
+  position: relative;
+}
+
+.contact-article__info-item_skype::before {
+  content: url(../assets/skype_icon.png);
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
+
+.contact-article__info-item_isq::before {
+  content: url(../assets/icq_icon.png);
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
+
+.contact-article__info-item_mail::before {
+  content: url(../assets/email_icon.png);
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
+
+.contact-article__info-item_fone::before {
+  content: url(../assets/phone_icon.png);
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
+
+.contact-article__info-social {
+  margin-left: -28px;
+}
+
+.section-foter__article {
+  font-size: 12px;
+  text-align: center;
+}
+
+.section-foter {
+  background-color: white;
+  color: #445162;
+  padding: 5px 0;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .profile, .section-foter {
+    width: 100%;
+  }
+
+  .main-section {
+    flex-flow: column;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,8 @@
+@media (max-width: 640px) {
+    .profile, .section-foter{
+        width: 100%;
+        }
+    .main-section{
+        flex-flow: column;
+    }
+}
