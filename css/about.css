@@ -1,14 +1,16 @@
 body{
     background-color: #282828;
+    
 }
 .content-all {
     max-width: 1280px;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
 }
 .header-section{
     background-color: #525ea7;
     padding:35px;
-    font-family: 'Montserrat', sans-serif;
+    
     display: flex;
     justify-content: space-between;
     color: white;
@@ -97,6 +99,7 @@ body{
 }
 .section-left__item{
     margin-bottom: 30px;
+    
 }
 .section-left__interests{
     display: flex;
@@ -110,7 +113,7 @@ body{
     
 }
 .interests__item_text{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
 }
@@ -118,9 +121,10 @@ body{
     position: relative;
     width: 30%;
 }
-.section-left__list{
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+
+.section-left__list-item{
+    margin: 0 15%;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: bold;
 }
