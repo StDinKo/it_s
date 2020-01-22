@@ -1,130 +1,217 @@
-body{
-    background-color: #282828;
-    
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.section-right__title, .section-left__title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.section-right__title_img, .section-left__title_img {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.section-right__title_text, .section-left__title_text {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+body {
+  background-color: #282828;
+}
+
 .content-all {
-    max-width: 1280px;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-}
-.header-section{
-    background-color: #525ea7;
-    padding:35px;
-    
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-.header-section__about{
-    display: flex;
-}
-.header-section__img{
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    margin-right: 50px;
-}
-.header-section__text{
-    font-size: 35px;
-    font-weight: bold;
-    
-
-}
-.header-section__text_small{
-    font-size: 20px;
-    font-weight: normal;
-    margin-top: 30px;
- 
-}
-.header-section__contact{
-    font-size: 15px;
-    
-}
-.header-section__item{
-    display: flex;
-    margin-bottom: 30px;
-}
-.header-section__contact-img{
-    height: 15px;
-    
-}
-.header-section__contact-text{
-    margin-left: 20px;
-    }
-.header-section__img_type_adr{
-    margin: 0 3px 0 2px;
-}
-.header-section__img_type_web{
-    margin-left: 1px;
-}
-.header-section__img_type_adr{
-    margin: -1px 1px 0 2px;
-}
-.section-main{
-    background-color: white;
-    display: flex;
-    
-}
-.section-right{
-    max-width: 70%;
- 
-}
-.section-left{
-    max-width: 30%;
-    background-color: #d5d5d5;
-   box-sizing: border-box;
-    padding: 55px 20px 0 55px;
-}
-.section-left__title_img{
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-right: 30px;
-}
-.section-left__title_text{
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.section-left__title{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    
-}
-.section-left__article_italic{
-    font-size: 16px;
-    font-style: italic;
-    
-}
-.section-left__item{
-    margin-bottom: 30px;
-    
-}
-.section-left__interests{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.interests__item_img{
-    width: 50px;
-    height: 50px;
-    margin-left: 22px;
-    
-}
-.interests__item_text{
-    font-size: 15px;
-    text-align: center;
-    font-weight: bold;
-}
-.interests__item{
-    position: relative;
-    width: 30%;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
-.section-left__list-item{
-    margin: 0 15%;
-    font-size: 15px;
-    line-height: 1.5;
-    font-weight: bold;
+.header-section {
+  background-color: #525ea7;
+  padding: 30px 55px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }
+
+.header-section__about {
+  display: flex;
+}
+
+.header-section__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  margin-right: 50px;
+}
+
+.header-section__text {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.header-section__text_small {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+.header-section__contact {
+  font-size: 15px;
+}
+
+.header-section__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.header-section__contact-img {
+  height: 15px;
+}
+
+.header-section__contact-text {
+  margin-left: 20px;
+}
+
+.header-section__img_type_adr {
+  margin: 0 3px 0 2px;
+}
+
+.header-section__img_type_web {
+  margin-left: 1px;
+}
+
+.header-section__img_type_adr {
+  margin: -1px 1px 0 2px;
+}
+
+.section-main {
+  background-color: white;
+  display: flex;
+}
+
+.section-right {
+  max-width: 70%;
+  padding: 55px 20px;
+  position: relative;
+}
+
+.section-left {
+  max-width: 30%;
+  background-color: #d5d5d5;
+  box-sizing: border-box;
+  padding: 55px 20px 0 55px;
+}
+
+.section-left__article_italic {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.section-left__item {
+  margin-bottom: 30px;
+}
+
+.section-left__interests {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.interests__item_img {
+  width: 50px;
+  height: 50px;
+  margin-left: 22px;
+}
+
+.interests__item_text {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.interests__item {
+  position: relative;
+  width: 30%;
+}
+
+.section-left__list-item {
+  margin: 0 15%;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.example__item {
+  float: right;
+  max-width: 50%;
+}
+
+.example__img {
+  max-width: 89.953271028%;
+}
+
+.example__block_text {
+  text-align: center;
+  margin: 15px 0 25px 0;
+  font-weight: bold;
+  max-width: 89.953271028%;
+}
+
+/*# sourceMappingURL=about.css.map */
