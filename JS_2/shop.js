@@ -1,10 +1,16 @@
 class Client {
-    constructor(id, firstname, lastName, spentMoney = 0){
+    constructor(id, firstname, lastName, spentMoney = 0, buyProbactsCount = 0){
         this.id = id;
         this.firstname = firstname;
         this.lastName = lastName;
         this.spentMoney = spentMoney;
+        this.buyProbactsCount = buyProbactsCount;
+        
     }
+    buyProdact () {
+        
+    }
+
 };
 class Product {
     constructor(id, name, type, cost) {
@@ -65,18 +71,19 @@ class Shop{
         productsToSell.splice(0, productsToSell.length - count);
 
         let sum = infoProduct.cost * count;
-
+        
         productsToSell.forEach(p => {
             this.deleteProduct(p);
         });
         this.addPurchase(new Purchase(infoProduct.name, infoProduct.type, sum, count));
         client.spentMoney += sum;
+        client.buyProbactsCount += count;
     };
     purchasedProductsCount(){
-        return this.purchases.map(p => p.amount).reduce((sum, i) => sum = i);
+        return this.purchases.map(p => p.amount).reduce((sum, i) => sum + i);
     };
     earnedMoney(){
-        return this.clients.map(p => p.spentMoney).reduce((sum, i) => sum = i);
+        return this.clients.map(p => p.spentMoney).reduce((sum, i) => sum + i);
     };
     productsCount(){
         return this.products.length;
@@ -99,9 +106,9 @@ let product01 = new Product(1, 'Яблоко', 'Фрукты', 20),
  product02 = new Product(2, 'Яблоко', 'Фрукты', 20),
  product03 = new Product(3, 'Яблоко', 'Фрукты', 20),
  product04 = new Product(4, 'Яблоко', 'Фрукты', 20),
- product05 = new Product(5, 'Кортошка', 'Овощи', 20),
- product06 = new Product(6, 'Кортошка', 'Овощи', 20),
- product07 = new Product(7, 'Морковка', 'Овощи', 20);
+ product05 = new Product(5, 'Картошка', 'Овощи', 25),
+ product06 = new Product(6, 'Картошка', 'Овощи', 25),
+ product07 = new Product(7, 'Морковка', 'Овощи', 35);
 
 const MyShop = new Shop();
 
@@ -117,7 +124,7 @@ MyShop.addProduct(product06);
 MyShop.addProduct(product07);
 
 MyShop.sellProduct(client01, 'Картошка', 2);
-MyShop.sellProduct(client01, 'Яблоко', 1);
+MyShop.sellProduct(client01, 'Яблоко', 2);
 
 console.log(MyShop.purchasedProductsCount());
 console.log(MyShop.earnedMoney());
