@@ -51,14 +51,14 @@ export class Shop{
         return this.purchases.map(p => p.amount).reduce((sum, i) => sum = i);
     };
     earnedMoney(){
-        return this.clien.map(p => p.spentMoney).reduce((sum, i) => sum = i);
+        return this.clients.map(p => p.spentMoney).reduce((sum, i) => sum = i);
     };
     productsCount(){
         return this.products.length;
     };
     productsCountByType(){
         let result = {};
-        this.product.map(p => p.type).forEach(function(type) { result[type] = (result[type] || 0) +1; });
+        this.products.map(p => p.type).forEach(function(type) { result[type] = (result[type] || 0) +1; });
         return result;
     };
     purchasedSumByType(){

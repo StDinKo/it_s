@@ -12,7 +12,7 @@ let product01 = new Product(1, 'Яблоко', 'Фрукты', 20),
  product04 = new Product(4, 'Яблоко', 'Фрукты', 20),
  product05 = new Product(5, 'Кортошка', 'Овощи', 20),
  product06 = new Product(6, 'Кортошка', 'Овощи', 20),
- product07 = new Product(7, 'Морковка', 'Овощи', 20),
+ product07 = new Product(7, 'Морковка', 'Овощи', 20);
 
 const MyShop = new Shop();
 
