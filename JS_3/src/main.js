@@ -1,7 +1,7 @@
 import {Product} from './product.js';
-import {Purchase} from './purchase.js';
 import {Client} from './client.js';
 import {Shop} from './shop.js';
+
 
 let client01 = new Client(1, 'Mary', 'Smit');
 let client02 = new Client(2, 'Jon', 'Smit');
@@ -12,7 +12,7 @@ let product01 = new Product(1, 'Яблоко', 'Фрукты', 20),
  product04 = new Product(4, 'Яблоко', 'Фрукты', 20),
  product05 = new Product(5, 'Картошка', 'Овощи', 25),
  product06 = new Product(6, 'Картошка', 'Овощи', 25),
- product07 = new Product(7, 'Морковка', 'Овощи', 35);
+ product07 = new Product(7, 'Морковка', 'Овощи', 35),
  product08 = new Product(8, 'Морковка', 'Овощи', 35);
 
 const MyShop = new Shop();

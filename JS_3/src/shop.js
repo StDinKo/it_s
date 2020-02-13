@@ -1,4 +1,4 @@
-
+import {Purchase} from './purchase.js';
 export class Shop{
     constructor(){
         this.clients = [];
@@ -40,7 +40,7 @@ export class Shop{
         productsToSell.splice(0, productsToSell.length - count);
 
         let sum = infoProduct.cost * count;
-
+        
         productsToSell.forEach(p => {
             this.deleteProduct(p);
         });
@@ -48,16 +48,17 @@ export class Shop{
         client.spentMoney += sum;
         client.buyProbactsCount += count;
         client.buyProducts.push(productName,count);
+        
     };
     purchasedProductsCount(){
-        return this.purchases.map(p => p.amount).reduce((sum, i) => sum = i);
+        return this.purchases.map(p => p.amount).reduce((sum, i) => sum + i);
     };
     earnedMoney(){
-        return this.clients.map(p => p.spentMoney).reduce((sum, i) => sum = i);
+        return this.clients.map(p => p.spentMoney).reduce((sum, i) => sum + i);
     };
     productsCount(){
         return this.products.length;
-    };
+    }; 
     productsCountByType(){
         let result = {};
         this.products.map(p => p.type).forEach(function(type) { result[type] = (result[type] || 0) +1; });
@@ -68,4 +69,4 @@ export class Shop{
         this.purchases.forEach(function(p) { result[p.type] = (result[p.type] || 0) +p.sum; });
         return result;
     };
-}
+};
