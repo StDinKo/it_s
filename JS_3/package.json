@@ -5,15 +5,15 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development" ,
-    "prod": "webpack --mode production"
+    "dev": "webpack --mode development --config webpack.dev.js",
+    "prod": "webpack --mode production --config webpack.prod.js"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
   }
 }
