@@ -46,6 +46,8 @@ export class Shop{
         });
         this.addPurchase(new Purchase(infoProduct.name, infoProduct.type, sum, count));
         client.spentMoney += sum;
+        client.buyProbactsCount += count;
+        client.buyProducts.push(productName,count);
     };
     purchasedProductsCount(){
         return this.purchases.map(p => p.amount).reduce((sum, i) => sum = i);
